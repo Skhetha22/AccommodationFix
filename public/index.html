@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccommodationFix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>AccommodationFix</h1>
+    
+    <!-- Form to add a new accommodation -->
+    <div>
+        <h2>Add New Accommodation</h2>
+        <form id="accommodationForm">
+            <input type="text" id="name" placeholder="Accommodation Name" required>
+            <input type="text" id="location" placeholder="Location" required>
+            <input type="number" id="price" placeholder="Price" required>
+            <button type="submit">Add Accommodation</button>
+        </form>
+    </div>
+
+    <!-- Section to display accommodations -->
+    <div>
+        <h2>Available Accommodations</h2>
+        <ul id="accommodationList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
