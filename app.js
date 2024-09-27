@@ -2,6 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const accommodationRoutes = require('./routes/accommodationRoutes');
+const listingRoutes = require('./routes/listingRoutes'); // Add the listing routes
 
 // Initialize the app
 const app = express();
@@ -25,6 +26,9 @@ app.get('/', (req, res) => {
 
 // Use accommodation routes
 app.use('/api/accommodations', accommodationRoutes);
+
+// Use listing routes
+app.use('/api/listings', listingRoutes); // Use listing routes
 
 // Set the port number
 const PORT = process.env.PORT || 5000;
